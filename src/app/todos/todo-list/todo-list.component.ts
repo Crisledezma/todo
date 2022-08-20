@@ -8,5 +8,5 @@ import { Task } from '../interfaces/todos.interface';
 })
 export class TodoListComponent {
 
-  @Input('data') tareas: Task[] = []
+  @Input('data') tareas: Task[] = [];
 }

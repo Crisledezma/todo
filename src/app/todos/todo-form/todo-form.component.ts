@@ -2,19 +2,16 @@ import { Component, Input } from '@angular/core';
 import { Task } from '../interfaces/todos.interface';
 
 @Component({
-  selector: 'app-todo-form',
+  selector   : 'app-todo-form',
   templateUrl: './todo-form.component.html',
-  styleUrls: ['./todo-form.component.css']
+  styleUrls  : ['./todo-form.component.css']
 })
 export class TodoFormComponent {
 
   @Input('addTask') addTask: any
  
-  todo: Task = {
-    task: '',
-    completed: false
-  }
-  title: string = 'Agregar tareas';
+  todo       : Task   = {task: '',completed: false}
+  title      : string = 'Agregar tareas';
   placeholder: string = 'Ingrese la tarea';
 
   add() {
